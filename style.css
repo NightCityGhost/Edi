@@ -1,0 +1,171 @@
+body{
+    background-color: #222;
+    color: #fff;
+}
+
+a, a:hover{
+    color: #ddd;
+    outline: none;
+    text-decoration: none;
+}
+
+.error{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 32px;
+    animation: shake 3s infinite;
+}
+
+.loader{
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate(-1px, 0 ); }
+    20%, 80% { transform: translate(2px, 0); }
+    30%, 50%, 70% { transform: translate(-4px, 0); }
+    40%, 60% { transform: translate(4px, 0); }
+}
+
+.header-tab{
+    padding-left: 20px;
+    background-color: #444;
+}
+
+.header-tab>h1{
+    display: inline-block;
+    width: auto;
+    height: 100%;
+}
+
+nav{
+    float: right;
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-right: 15px;
+}
+
+nav>ul{
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+}
+
+nav>ul>li{
+    float: right;
+}
+
+nav>ul>li>a{
+    display: inline-block;
+    /* background-color: gray; */
+    color: #111;
+    height: 100%;
+    margin: 0 auto;
+    margin-left: 10px;
+    padding: 5px;
+    
+
+}
+
+.dashboard>h2{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.buttons{
+    float: right;
+}
+
+.users-list{
+    padding: 10px;
+}
+
+.list-state{
+    font-size: 16px;
+}
+
+h2:hover{
+    color: #61dafb;
+}
+
+table {
+    display: inline-block;
+    text-align: left;
+}
+th,td {
+    padding: 10px;
+}
+
+tr:nth-child(2n){
+    background-color: #444;
+}
+
+thead>tr>th:hover{
+    background-color: #444;
+}
+
+.selected{
+    color: tomato;
+}
+
+tbody>tr:hover{
+    color: #61dafb;
+}
+
+footer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+footer > a{
+    text-decoration: none;
+    color: #61dafb;
+}
+
+.dashboard{
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.chart{
+    width: 100%;
+    height: auto;
+}
+
+#collapseDashboard{
+    overflow: hidden;
+}
+
+.user-card{
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.user{
+    display: flex;
+}
+
+.user-info{
+    display: grid;
+    padding-left: 10px;
+}
+
+#box-plot{
+    margin: 0 auto;
+}
+
+.fadee{
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
